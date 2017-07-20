@@ -1,0 +1,39 @@
+{
+  "users": [
+      {
+        "id": 1,
+        "name": "Tomas",
+        "surname": "Paronai",
+        "age": 24,
+        "friends": [2, 3]
+      },
+      {
+        "id": 2,
+        "name": "Lola",
+        "surname": "Kalashnikov",
+        "age": 19,
+        "friends": [1]
+      },
+      {
+        "id": 3,
+        "name": "Lukas",
+        "surname": "Ombre",
+        "age": 35,
+        "friends": [1]
+      },
+      {
+        "id": 4,
+        "name": "Maria",
+        "surname": "Mendoza",
+        "age": 28,
+        "friends": []
+      },
+      {
+        "id": 5,
+        "name": "Peter",
+        "surname": "Koval",
+        "age": 16,
+        "friends": []
+      }
+  ]
+}

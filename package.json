@@ -1,0 +1,19 @@
+{
+  "name": "functions-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf functions && rimraf functions-develop/node-modules",
+    "build": "babel --plugins transform-object-rest-spread 'functions-develop' --out-dir 'functions' --presets=es2015 --copy-files --ignore 'node-modules'",
+    "postbuild": "cd functions && npm install",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.1"
+  }
+}
